@@ -1,0 +1,283 @@
+@import 'https://fonts.googleapis.com/css?family=Lato:400,700';
+*{
+    box-sizing: border-box;
+}
+
+body{
+    margin: 0;
+    padding:0;
+    background-color: #eee;
+    font-family: 'Lato', sans-serif;
+}
+
+h1, h2, p{
+    margin: 0;
+}
+
+img{
+    max-width: 100%;
+}
+
+header{
+    width: 70%;
+    margin: 1em auto 0 auto;
+
+}
+
+nav{
+    text-align: center;
+    font-size: 0.9rem;
+}
+
+.header-container{
+    position: fixed;
+    top: 0;
+    background: #eee;
+    width: 100%;
+    z-index: 999;
+    padding-bottom: 0.5rem;
+}
+
+.logo{
+    margin-bottom: 0.5em;
+}
+
+.nav__items,
+.specifications,
+.footer__items{
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.nav__item{
+    margin-bottom: 0.4em;
+}
+
+.nav__link,
+.footer__link{
+    text-decoration: none;
+    color:inherit;
+}
+
+.hero{
+    text-align: center;
+    margin-top: 11.25rem;
+}
+
+.form__element{
+    display: block;
+    margin: 0 auto;
+}
+
+.hero__title {
+    margin-bottom: 20px;
+}
+
+.hero input[type='email'] {
+    max-width: 275px;
+    width: 100%;
+    padding: 5px;
+}
+
+.hero input[type='submit'] {
+    max-width: 150px;
+    width: 100%;
+    height: 30px;
+    margin: 15px auto;
+    border: 0;
+    background-color: #f1c40f;
+    cursor: pointer;
+}
+
+.hero input[type='submit']:hover {
+    background-color: orange;
+    transition: background-color 1s;
+  }
+
+.sales-points{
+    margin: 5rem auto;
+}
+
+.sales-point{
+    margin: 3rem auto;
+    text-align: center;
+}
+
+.icon{
+    display:none;
+    color: darkorange;
+}
+
+.how-it-works{
+    width: 100%;
+    max-width: 575px;
+    margin: 5rem auto;
+}
+
+.video{
+    display: block;
+    width: 100%;
+}
+
+.products{
+    margin-bottom: 5rem;
+}
+
+.product{
+    border:1px solid black;
+    width: 50%;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.product + .product {
+    margin-top: 5rem;
+}
+
+.variant{
+    background: rgb(226, 222, 222);
+    padding: 0.9rem 0;
+    font-weight: bold;
+}
+
+.price{
+    padding: 1rem;
+}
+
+.specifications > li{
+    margin: 1rem 0;
+}
+
+.btn {
+    padding: 0.75rem 1.25rem;
+    margin: 1rem 0;
+    font-size: 1em;
+    text-transform: uppercase;
+    border: 0;
+    border-radius: 2px;
+    cursor: pointer;
+    background:#f1c40f
+}
+
+.btn:hover{
+    background-color: orange;
+    transition: background-color 1s;
+}
+
+footer{
+    background: rgb(226, 222, 222);
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 1.5rem;
+}
+
+.footer__items{
+    display: flex;
+    margin-bottom: 0.3rem;
+}
+
+.footer__item{
+    margin-left: 2rem;
+}
+
+.footer__copyright{
+    color: gray;
+    font-size: 0.9rem;
+}
+
+@media(min-width: 551px){
+    .sales-points{
+        max-width: 90vw;
+        justify-content: space-between;
+    }
+    .sales-point{
+        display: flex;
+        text-align: left;
+
+    }
+    .icon{
+        display: inline;
+        width: 20%;
+    }
+    .sales-description{
+        width: 85%;
+    }
+}
+
+
+@media (min-width:600px) {
+    header{
+        display: flex;
+        align-items: center;
+        width: 100%;
+    }
+
+    .hero{
+        margin-top: 7.25rem;
+    }
+
+    nav{
+        margin: 0 auto;
+    }
+
+    .logo{
+        margin-bottom: 0;
+        width: 50%;
+        max-width: 350px;
+    }
+}
+
+@media (min-width:651px) {
+
+    nav{
+        margin: 0 3% 0 auto;
+        width: 31%;
+    }
+
+    .hero{
+        margin-top: 5.375rem;
+    }
+
+    .nav__items{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .nav__item{
+        margin-bottom: 0;
+    }
+
+    .sales-points{
+        max-width: 70vw;
+    }
+}
+
+@media (min-width:801px) {
+    .products{
+        display: flex;
+        justify-content: space-between;
+        margin: 0 auto 5rem auto;
+        max-width: 1000px;
+    }
+
+    .product{
+        width: 30%;
+        max-width: 300px;
+        margin: 0;
+    }
+
+    .product + .product {
+        margin-top: 0;
+    }
+}
+
+@media (min-width:875px) {
+    .sales-points{
+        max-width: 50vw;
+    }
+}
